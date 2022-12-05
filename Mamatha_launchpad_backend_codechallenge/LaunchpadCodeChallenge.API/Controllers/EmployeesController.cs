@@ -12,5 +12,16 @@ namespace LaunchpadCodeChallenge.API.Controllers
         {
 
         }
+
+
+        [HttpGet ("/department/{departmentId}")]
+
+        public void GetDeptEmployees()
+        {
+
+        }
+
     }
+
 }
+
