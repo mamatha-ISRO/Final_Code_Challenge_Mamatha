@@ -1,6 +1,7 @@
 ﻿using LaunchpadCodeChallenge.API.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace LaunchpadCodeChallenge.API.Controllers
 {
@@ -17,27 +18,30 @@ namespace LaunchpadCodeChallenge.API.Controllers
 
 
         [HttpGet]
-        public async Task<IEnumerable<Employees>> GetEmployees()
+        public async Task<ActionResult> GetEmployees()
         {
-            var employees = await _context.Employee.ToList();
-            return Ok(employees);
+            return Ok(await _context.Employee.ToArrayAsync());
         }
 
 
         [HttpGet("/department/{departmentId}")]
 
-        public ActionResult<>GetDeptEmployees(int departmentId)  
+        public async Task<ActionResult> GetDeptEmployees(int departmentId)
         {
 
-            var department = _context.Department.Find(departmentId);
-        if (Department == null)
+            var department = await _context.Department.FindAsync(departmentId);
+
+            if (department == null)
             {
-             return NotFound();
-               }
-        return Ok(department);
+                return NotFound();
+            }
+            return Ok(department);
         }
 
-    
 
-}
+    }
+
+
+
+    }
 

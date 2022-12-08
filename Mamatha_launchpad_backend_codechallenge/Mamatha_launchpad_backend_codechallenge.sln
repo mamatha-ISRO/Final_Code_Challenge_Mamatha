@@ -5,7 +5,11 @@ VisualStudioVersion = 17.2.32630.192
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LaunchpadCodeChallenge.API", "LaunchpadCodeChallenge.API\LaunchpadCodeChallenge.API.csproj", "{724A1C1B-A64F-4A07-B4B2-0F5A3F2E1708}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StringManipulation", "StringManipulation\StringManipulation.csproj", "{D7BAFEC3-B628-4EB3-97B9-B5666C31BFE3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StringManipulation", "StringManipulation\StringManipulation.csproj", "{D7BAFEC3-B628-4EB3-97B9-B5666C31BFE3}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AWSLambda1", "AWSLambda1\AWSLambda1.csproj", "{09DD76DC-CF1D-464F-85EB-7848396CAD05}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{1D5504A1-737B-4CC7-9915-43091B44FDCA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +25,14 @@ Global
 		{D7BAFEC3-B628-4EB3-97B9-B5666C31BFE3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D7BAFEC3-B628-4EB3-97B9-B5666C31BFE3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D7BAFEC3-B628-4EB3-97B9-B5666C31BFE3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{09DD76DC-CF1D-464F-85EB-7848396CAD05}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{09DD76DC-CF1D-464F-85EB-7848396CAD05}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{09DD76DC-CF1D-464F-85EB-7848396CAD05}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{09DD76DC-CF1D-464F-85EB-7848396CAD05}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1D5504A1-737B-4CC7-9915-43091B44FDCA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D5504A1-737B-4CC7-9915-43091B44FDCA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D5504A1-737B-4CC7-9915-43091B44FDCA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1D5504A1-737B-4CC7-9915-43091B44FDCA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
